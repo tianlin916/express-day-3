@@ -5,16 +5,29 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <a href="/userlist">See userlist</a>
+    <h1><%= title %> Form</h1>
     <form name="adduser" method="post" action="/adduser">
-    	<input type="text" placeholder="username" name="username">
-    	<input type="text" placeholder="usercolor" name="usercolor">
-    	<button type="submit">Submit</button>
+      <ul>
+        <li>Username</li>
+
+        <li><input type="text" placeholder="Username" name="username"></li>
+
+        <li>Favorite Fruit</li>
+        
+        <li><input type="text" placeholder="Favorite Fruit" name="userfruit"></li>
+          
+        <li><button type="submit">Submit</button></li>
+      </ul>
     </form>
     <form name="deleteuser" method="post" action="/deleteuser">
-    	<input type="text" placeholder="username" name="username">
-    	<button type="submit">Submit</button>
+      <ul>
+        <li>User to Delete</li>
+
+        <li><input type="text" placeholder="Username" name="username"></li>
+          
+        <li><button type="submit">Submit</button></li>
+      </ul>
     </form>
+    <a href="/userlist">See userlist</a>
   </body>
 </html>
