@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/userlist">See userlist</a>
+    <form name="adduser" method="post" action="/adduser">
+    	<input type="text" placeholder="username" name="username">
+    	<input type="text" placeholder="usercolor" name="usercolor">
+    	<button type="submit">Submit</button>
+    </form>
+    <form name="deleteuser" method="post" action="/deleteuser">
+    	<input type="text" placeholder="username" name="username">
+    	<button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
